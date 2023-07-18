@@ -7,7 +7,7 @@ const app=express();
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
 app.get("/",function(request,response){
-  response.sendFile(__dirname+"/signup.html");
+  response.sendFile(__dirname+"/index.html");
 })
 app.post("/",function(request,response){
   const firstName=request.body.fname;
